@@ -80,6 +80,12 @@ sup {
 }
 
 /* Mobile */
+@media (max-width: 2450px) {
+  .header-message {
+    bottom: 0;
+    padding-bottom: 2%;
+  }
+}
 @media (max-width: 1300px) {
   .splash-text {
     font-size: 5rem;
@@ -95,7 +101,8 @@ sup {
 
   .splash-2 {
     left: 55%;
-    top: 20rem;
+  bottom: 0;
+  padding-bottom: 10%;
   }
 
   .header-message {
