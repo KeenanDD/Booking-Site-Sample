@@ -1,0 +1,72 @@
+/* ---------------IDs */
+
+/* ---------------objects */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+sup {
+  font-size: 1.5rem;
+}
+p {
+  font-size: 1.2rem;
+}
+/* ---------------Classes */
+
+/* Splash page */
+
+.header {
+  width: 40%;
+  background-color: #fff;
+  height: 100vh;
+}
+
+.navbar-brand {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.active {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem
+}
+.splash-text {
+  font-family: 'Work Sans';
+  position:absolute;
+font-size: 10rem;
+font-weight: 900;
+z-index: 1;
+}
+.splash-1{
+  font-size: 15rem;
+  top: 15%;
+  left: 10.5%;
+}
+.splash-2 {
+  left: 40%;
+  top: 50%;
+}
+
+.header-image {
+  width: 60%;
+  background-image: url("../images/IMG_2373.jpg");
+  background-size: auto 100%;
+  height:100vh;
+  position:absolute;
+  right: 0;
+  top: 0;
+}
+.header-message {
+  position: absolute;
+  padding-right: 10%;
+  padding-left: 2%;
+  top: 55%;
+}
+/* About page */
+.page-body-2 {
+  height: 100vh;
+  background-color:blue;
+}
