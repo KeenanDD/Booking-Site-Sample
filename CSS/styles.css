@@ -102,14 +102,16 @@ sup {
   .splash-2 {
     left: 55%;
     top:auto;
-  bottom: 0;
-  padding-bottom: 10%;
+  bottom: 50%;
+  padding: 3%;
   }
 
   .header-message {
     top: 35%;
     font-weight: bolder;
   }
-
+.navbar {
+  z-index: 2;
+}
 
 }
