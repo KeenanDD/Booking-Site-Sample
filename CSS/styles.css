@@ -115,7 +115,7 @@ sup {
 .header-image {
   height: 50%;
   width: 100%;
-  background-size: 100% auto;
+  background-size: cover;
 }
   .splash-text {
     font-size: 5em;
