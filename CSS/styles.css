@@ -154,7 +154,10 @@ top:15%;
   z-index: 2;
 }
 .featured {
-  right:0;
+  height: 7%;
+  margin:2% 5%;
+  bottom:0;
+  width:90%
 }
 
 }
