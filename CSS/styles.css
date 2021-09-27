@@ -90,6 +90,9 @@ sup {
   .header {
     height: 75vh;
   }
+  .header-image {
+    height: 75vh;
+  }
   .splash-text {
     font-size: 5rem;
     font-weight: 900;
@@ -104,9 +107,7 @@ sup {
 
   .splash-2 {
     left: 55%;
-    top:auto;
-  bottom: 50%;
-  padding: 3%;
+
   }
 
   .header-message {
