@@ -87,6 +87,9 @@ sup {
   }
 }
 @media (max-width: 1300px) {
+  .header {
+    height: 75vh;
+  }
   .splash-text {
     font-size: 5rem;
     font-weight: 900;
