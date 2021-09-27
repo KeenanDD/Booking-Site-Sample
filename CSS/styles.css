@@ -105,6 +105,10 @@ sup {
   }
 }
 @media (max-width: 1300px) {
+  
+  p {
+    font-size:1.5em;
+  }
 
   .header{
     height:50%;
