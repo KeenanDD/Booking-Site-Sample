@@ -106,13 +106,13 @@ sup {
 @media (max-width: 1300px) {
 
   .header{
-    height:50vh;
+    height:50%;
     width: 100%;
-    position:absolute;
+    position: absolute;
     bottom:0;
   }
 .header-image {
-  height: 50vh;
+  height: 50%;
   width: 100%;
   background-size: 100% auto;
 }
@@ -126,6 +126,9 @@ sup {
     font-size: 10em;
 
   }
+.navbar-brand{
+  padding-left: 12%;
+}
 
   .splash-2 {
 font-size: 3em;
@@ -135,17 +138,18 @@ top:30%;
 
   .header-message {
     height: 30vh;
-    width: 70%;
+    width: 80%;
     font-weight: bolder;
     position: absolute;
     top: 65%;
+    padding-left: 12%;
     z-index: 1;
   }
 .navbar {
   z-index: 2;
 }
 .featured {
-  right: 0
+  right:0;
 }
 
 }
