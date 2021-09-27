@@ -5,6 +5,8 @@ html {
 }
 
 body {
+  margin:0;
+  border:0;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -92,11 +94,7 @@ sup {
   font-stretch: expanded;
   font-family: 'Montserrat-Black', sans-serif;
 }
-/* Product page */
-.page-body-2 {
-  height: 100vh;
-  background-color: blue;
-}
+
 
 /* Mobile */
 @media (max-width: 2450px) {
