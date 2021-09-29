@@ -18,10 +18,44 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans:wght@300;900&display=swap" rel="stylesheet">
   <!-- JQuery -->
   <script>
-    $(document).ready(function () {
-        $('div.toshow').fadeIn(2200);
-        $('sup.toshow').fadeIn(4000);
-  });
+    $(document).ready(function() {
+      $('div.toshow').fadeIn(2200);
+    });
+  </script>
+  <!-- JS -->
+  <script language="JavaScript" type="text/javascript">
+  <!--
+  function checkcalc(bookbed) {
+  var depDate = new Date(bookbed.departureDate.value);
+  var arrDate = new Date(bookbed.arrivalDate.value);
+  if (bookbed.arrivalDate.value==0 || bookbed.departureDate.value==0){
+  alert("Please choose dates for both departue and arrival.");
+  return false;
+  }
+  else if (arrDate.getTime() <= depDate.getTime()) {
+  alert("The arrival date should be after the departure date. Please Check.");
+  return false;
+  }
+  else return (true);
+  }
+  </script>
+
+<script>
+
+
+function toggleInput() {
+var info = document.getElementById('bookingInfo');
+var input = document.getElementById('bookingInput');
+
+if (info.style.display != 'none') {
+  info.style.display = 'none';
+  input.style.display = 'block';
+} else {
+  info.style.display = 'block';
+  input.style.display = 'none';
+}
+}
+
 </script>
 </head>
 
@@ -32,7 +66,7 @@
 
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-          <a class="navbar-brand ms-3" href="#">Travell😲<sup class="toshow" style="display:none">oh!</sup></a>
+          <a class="navbar-brand ms-3" href="#">Travell😲<sup>oh!</sup></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -73,36 +107,51 @@
       </nav>
     </div>
     <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12 toshow" style="display:none">
-        <h1 class="splash-text splash-1"> Getaways</h1>
+      <div class="row">
+        <div class="col-lg-12 toshow" style="display:none">
+          <h1 class="splash-text splash-1"> Getaways</h1>
 
-      </div>
-      <div class="container">
-      <div class="col-lg-6 toshow" style="display:none"">
-        <h1 class="splash-text splash-2 ">Beyond Belief</h1>
-      </div>
-
-      <div class="header-message col-lg-4">
-        <p>
-            Our resort and holiday destinations will help you have
-            a once in a lifetime experience for a fraction of the cost.
-            Through our partnerships we can offer a unique vacation
-            all while supporting local enterprise. Make your next trip
-            an unforgetable one, browse some of our most popular getaways
-            and let the journey begin!
-            <br />
-            The world is YOURS to discover.
-        </p>
-      </div>
         </div>
-    </div>
+        <div class="container">
+          <div class="col-lg-6 toshow" style="display:none">
+        <h1 class=" splash-text splash-2 ">Beyond Belief</h1>
       </div>
+
+      <div  class=" header-message col-lg-4" >
+            <p id="bookingInfo">
+              Our resort and holiday destinations will help you have
+              a once in a lifetime experience for a fraction of the cost.
+              Through our partnerships we can offer a unique vacation
+              all while supporting local enterprise. Make your next trip
+              an unforgetable one, browse some of our most popular getaways
+              and let the journey begin!
+              <br />
+              The world is YOURS to discover.
+            </p>
+            <form id="bookingInput" name=bookbed onsubmit="return checkcalc(this)" style="display:none" >
+          <table cellpadding=2 cellspacing=0 border=0>
+          <tr>
+          <td>departure: <input name="departureDate" type=date value="" maxlength=10 size=15 onFocus="this.blur()" style="font-size: small;"></td>
+          <td> <i class="far fa-calendar-alt"></i></a> Select</td>
+          </tr>
+          <tr>
+          <td>arrival: <input name="arrivalDate" type=date value="" maxlength=10 size=15 onFocus="this.blur()" style="font-size: small; margin-left: 43px;"></td>
+          <td><i class="far fa-calendar-alt"></i></a> Select</td>
+          </tr>
+          <label for="quantity">guests:</label>
+           <input type="number" id="quantity" name="quantity" min="1" max="4" maxlength=5 size=3 onFocus="this.blur()" style="font-size: small; margin-left: 43px;"><i class="fas fa-users" style="margin-left: 1%;"></i>
+          </table>
+          <input type="submit" name="B1" value="Confirm" style="font-size: xx-small;">
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <div class="featured d-grid gap-2 shadow">
-<button type="button" class="btn booking">BOOK NOW</button>
-      </div>
+      <button id="toggleBtn" type="button" class="btn booking" onclick="toggleInput()" >BOOK NOW</button>
+    </div>
   </div>
 </body>
 
